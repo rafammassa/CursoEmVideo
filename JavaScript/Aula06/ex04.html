@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var nome = window.prompt('Qual é seu nome?');
+        document.writeln(`Olá, ${nome}! Seu nome tem ${nome.length} letras.`);
+        document.writeln(`Seu nome em maiúsculo é ${nome.toUpperCase()}.`);
+        document.writeln(`Seu nome em minúsculo é ${nome.toLowerCase()}.`);
+
+        var n1 = 12585.4345;
+        document.writeln(n1);
+        document.writeln(n1.toFixed(2)); //mostrando duas casas decimais
+        document.writeln(n1.toFixed(2).replace('.',','));//trocando ponto por vírgula
+        document.writeln(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}));
+        //mostrando como salário
+    </script>
+</body>
+</html>
